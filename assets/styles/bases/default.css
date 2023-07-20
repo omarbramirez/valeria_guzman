@@ -1,0 +1,136 @@
+html {
+  background: var(--variation-1);
+  overflow-x: hidden;
+}
+
+body,
+.flex-container {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: var(--font-1);
+}
+
+.flex-container {
+  width: 100%;
+  background-color: none;
+  justify-content: flex-start;
+  color: var(--variation-4);
+  overflow: visible;
+}
+
+.content {
+  width: 90%;
+  margin: 5rem auto;
+  min-height: 70vh;
+}
+
+.content.active {
+  display: none !important;
+}
+
+nav,
+footer,
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dot_container {
+  height: 2rem;
+  padding: 3rem 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.dot {
+  cursor: pointer;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0.5rem 1rem;
+  border-radius: 50%;
+  background: var(--complementary);
+  opacity: 0.5;
+}
+
+.dot.active {
+  background: var(--primary);
+  width: 1.3rem;
+  height: 1.3rem;
+  opacity: 1;
+}
+
+.button {
+  border: solid 1px var(--primary);
+  width: 200px;
+  margin: 2rem 0;
+  font-size: var(--text-subheader);
+  padding: 0.5rem 0;
+}
+
+h1 {
+  color: var(--variation-3);
+  font-size: var(--text-title);
+  font-family: var(--font-2);
+  margin-bottom: 2rem;
+}
+
+.title-light {
+  color: var(--complementary);
+  font-size: var(--text-display);
+}
+
+h2 {
+  color: var(--variation-4);
+  font-family: var(--font-2);
+  font-size: var(--text-subheader);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-family: var(--font-2);
+  font-size: var(--text-subheader);
+  font-weight: bold;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: var(--font-1);
+  /* font-size: var(--text-base); */
+  font-size: var(--text-subheader);
+}
+
+a {
+  text-align: center;
+  text-decoration: none;
+  color: var(--primary);
+  margin: 0;
+  display: inline-block;
+}
+
+b {
+  font-family: var(--font-1);
+  /* font-size: var(--text-base); */
+  font-weight: bold;
+}
+
+@media (max-width: 950px) {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  a,
+  .button {
+    text-align: center;
+  }
+
+}

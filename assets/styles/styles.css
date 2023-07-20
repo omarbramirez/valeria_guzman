@@ -1,0 +1,20 @@
+/*BASES*/
+@import url("bases/reset.css");
+@import url("bases/default.css");
+@import url("bases/template.css");
+@import url("bases/header.css");
+@import url("bases/footer.css");
+@import url("bases/animation.css");
+
+/*VARIABLES*/
+@import url("variables/v-color.css");
+@import url("variables/v-typography.css");
+
+/*PAGES*/
+@import url("pages/index.css");
+@import url("pages/aboutme.css");
+@import url("pages/books.css");
+@import url("pages/gallery.css");
+
+/*RESPONSIVE*/
+/* @import url("bases/responsive.css"); */

@@ -1,0 +1,198 @@
+.content-books {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#books {
+  font-size: var(--text-headline);
+  color: var(--primary);
+}
+
+#books::before,
+#books::after {
+  margin: 1rem;
+  content: 'book';
+  background-image: url(../../images/icons/icon_000.png);
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-indent: -9999px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.books {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.book {
+  width: 50%;
+  text-align: center;
+}
+
+.book_img {
+  width: 60%;
+  padding-bottom: 96%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 2rem;
+  min-width: auto;
+}
+
+#book_001 {
+  padding-bottom: 60%;
+  background-image: url(../../images/efusiva.jpg);
+}
+
+#book_002 {
+  background-image: url(../../images/ofidias.jpg);
+}
+
+/*BOOK TEMPLATE*/
+._2_col_book {
+  margin-right: 0;
+}
+
+.header_book {
+  min-height: 400px;
+  justify-content: center;
+}
+
+.book_title {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.button_book {
+  margin: auto;
+}
+
+.wrap_2_col.book p {
+  text-align: left;
+  font-style: normal;
+}
+
+.wrap_1.book {
+  max-width: 600px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.sticky_wrap{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: sticky;
+  top:2rem;
+}
+
+
+.wrap_2.book {
+  max-width: 600px;
+  width: 60%;
+}
+
+.book .book_section_title {
+  font-size: var(--text-subheader);
+align-self: flex-start;
+}
+
+/*                 */
+.wrapped {
+  margin-top: 4rem;
+}
+
+.free_trials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* .poem_wrap {
+
+} */
+
+
+.poem,
+.text {
+  width: 24rem;
+  padding-bottom: 100%;
+  background-size: cover;
+  margin: 15px;
+}
+
+
+/* .evusi {
+  min-width: 400px;
+  min-height: 400px;
+  margin: 15px;
+  background-size: cover;
+} */
+
+.video_wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  flex-direction: column;
+  text-align: center;
+}
+
+video {
+  width: 60%;
+}
+
+@media (max-width: 800px) {
+  ._2_col_book {
+    flex-direction: column;
+  }
+
+  .book .book_section_title {
+  align-self:center;
+
+  }
+
+  .book {
+    width: 100%;
+  }
+
+  .wrap_1.book {
+    width: 100%;
+    flex-direction: column;
+  }
+.sticky_wrap{
+  position: static;
+}
+  .wrap_2.book {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .wrap_2_col.book p {
+    text-align: center;
+  }
+
+  .button_book {
+    margin: 2rem auto;
+  }
+
+  .poem_wrap {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .poem {
+    margin: 15px auto;
+  }
+
+  video {
+    width: 100%
+  }
+}

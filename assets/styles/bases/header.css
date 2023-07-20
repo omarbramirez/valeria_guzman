@@ -1,0 +1,124 @@
+header{
+top: 0;
+  background: var(--variation-1);
+  width: 100%;
+  z-index: 3;
+box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+-webkit-backdrop-filter: blur(3.5px);
+border-bottom: 0.1rem solid var(--primary);
+}
+
+header.active{
+z-index: 10;
+position: absolute !important;
+height: auto;
+box-shadow: none;
+border-bottom: none;
+}
+
+
+#logo{
+  display: inline-block;
+  font-size: var(--text-title);
+  display: inline-block;
+  letter-spacing: 0.3rem;
+  color: var(--variation-4);
+  font-family: var(--font-2);
+  text-decoration: none;
+  margin: 1.5rem auto;
+}
+
+#hamburger{
+  display: none;
+  background-image: url(../../images/icons/menu.svg);
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  margin: 0.5rem auto;
+  cursor: pointer;
+}
+
+#menu{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu_options{
+  width: 80%;
+}
+
+.menu_option{
+  margin: 0.9rem 0;
+}
+
+#submenu_options{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background: var(--primary);
+  align-items: flex-start;
+  opacity: 0;
+  padding: 1rem;
+}
+#submenu_options a{
+  color: var(--variation-5);
+}
+
+li:hover #submenu_options{
+  opacity: 1;
+}
+
+#arrow{
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+
+@media (max-width: 600px) {
+  #logo{
+    font-size: var(--text-headline);
+  }
+  #hamburger{
+    display: inline-block;
+  }
+  #menu_options{
+    opacity: 0;
+    height: 50vh;
+    position: absolute;
+    top: -100vh;
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+  #menu_options.active{
+    opacity: 1;
+    position: static;
+  }
+  a[data-option="books"]{
+    text-align: center;
+    display: inline-block;
+}
+  #submenu_options{
+    z-index: 10;
+    position: absolute;
+    top: -50vh;
+    opacity: 0;
+    text-align: center;
+    align-items: center;
+    background: none;
+    padding: 0;
+}
+#submenu_options.active{
+  opacity: 1;
+  position: static;
+}
+#submenu_options a[href="ofidias"],
+#submenu_options a[href="efusiva-penitente"]{
+  color: var(--complementary);
+}
+}

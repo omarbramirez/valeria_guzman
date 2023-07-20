@@ -1,0 +1,151 @@
+/*GENERAL CONTROLLER*/
+.flex-container-index {
+  justify-content: space-between;
+}
+
+.slide {
+  min-height: 300px;
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  flex-direction: row;
+  align-items: stretch;
+  opacity: 0;
+  z-index: 0;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+
+.slider.active {
+display: none !important;
+}
+
+
+.slide_img {
+  width: 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 1rem;
+}
+
+/*MAIN SLIDER IMAGE CONTROLLER*/
+div[data-img="1"] {
+  background-image: url(../../images/img_001.png);
+  /* background-size: contain; */
+}
+
+div[data-img="2"] {
+  background-image: url(../../images/img_002_alternative.png);
+}
+
+div[data-img="3"] {
+  background-image: url(../../images/img_003_alternative.png);
+}
+
+div[data-img="4"] {
+  background-image: url(../../images/img_004_alternative.png);
+}
+
+.description {
+  margin: 0 auto;
+  text-align: left;
+}
+
+/*MAIN LOGO SLIDER CONTROLLER*/
+.logo {
+  font-size: var(--text-logo);
+  color: var(--primary);
+  z-index: 2;
+}
+
+#main_slider {
+  margin: 6rem auto;
+  width: 50%;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+
+.call_to_action {
+  width: 50%;
+  max-width: 50%;
+  min-height: 60vh;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 950px) {
+  #main_slider {
+    width: 90%;
+  }
+
+  .slide {
+    width: 90%;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .call_to_action {
+    width: 100%;
+    max-width: none;
+    min-height: auto;
+    margin: auto;
+    padding: 0;
+  }
+
+  .logo_2_col {
+    position: static !important;
+    width: 100%;
+  }
+
+  #logo_001,
+  #logo_002,
+  #logo_003 {
+    width: 70%;
+    align-self: center;
+  }
+
+  .logo {
+    font-size: var(--text-display);
+  }
+
+  .description {
+    font-size: var(--text-title);
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .button {
+    margin: 2rem auto;
+    padding: 0.5rem 2rem;
+  }
+
+  .slide_img {
+    width: 80%;
+    padding-top: 100%;
+    display: block;
+    background-position: center !important;
+    margin: auto;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
+
+  #logo_001,
+  #logo_002,
+  #logo_003 {
+    left: 50%;
+    position: relative;
+    width: 250px;
+    background-position: center center;
+    align-self: center;
+  }
+}

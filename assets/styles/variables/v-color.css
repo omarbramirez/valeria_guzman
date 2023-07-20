@@ -1,0 +1,13 @@
+html {
+  /*PRIMARY COLOUR*/
+  --primary: #7d231b;
+  /*COMPLEMEMTARY COLOUR*/
+  --complementary: #941933;
+  /*CHROMATIC VARIATION*/
+  --variation-1: #bfbfbf;
+  --variation-2: #808080;
+  --variation-3: #ffffff;
+  --variation-4: #404040;
+  --t-variation-4: rgba(64, 64, 64, 0.6);
+  --variation-5: #e6e6e6;
+  }

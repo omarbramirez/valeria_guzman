@@ -1,0 +1,127 @@
+footer {
+  width: 100%;
+  margin-top: 2rem;
+  justify-content: space-between;
+  padding: 0 2rem;
+  padding-bottom: 0.5rem;
+}
+#footer{
+  color: var(--variation-3);
+  background: var(--complementary);
+}
+
+#footer.active{
+  position: absolute;
+  z-index: 11;
+  bottom: 0;
+}
+
+#main_footer{
+  color: var(--variation-4);
+}
+#main_footer.active{
+  position: absolute;
+z-index: 11;
+bottom: 0;
+}
+
+.module_001,
+.module_002{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+#credits{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: bottom;
+  flex-wrap: wrap;
+
+}
+.brands_icon{
+  height: 20px;
+  margin-bottom: 1rem;
+}
+.social_media{
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  margin: 0 2rem;
+}
+#linkedin{background-image: url(../../images/icons/linkedin.svg);}
+#facebook{background-image: url(../../images/icons/facebook.svg);}
+#instagram{background-image: url(../../images/icons/instagram.svg);}
+#logo_footer{
+  display: inline-block;
+  font-size: var(--text-subheader);
+  display: inline-block;
+  letter-spacing: 0.3rem;
+  color: var(--variation-3);
+  font-family: var(--font-2);
+  text-decoration: none;
+  margin: 1.5rem auto;
+}
+#logo_footer.active{
+  display: none;
+}
+#mail:before{
+  margin: 1rem;
+      content: 'book';
+      background-image: url(../../images/icons/icon_006.png);
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      text-indent: -9999px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      vertical-align: middle;
+
+}
+.footer_element{
+  font-size: var(--text-note);
+  color: var(--variation-3);
+  text-decoration: underline;
+}
+.footer_element .text_footer{
+  text-decoration: none;
+}
+.footer_element.main{
+  color: var(--variation-2);
+}
+#slash{
+  padding: 0 0.5rem;
+      text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  #logo_footer{
+    font-size: var(--text-headline);
+  }
+  footer{
+    padding: 1rem 0;
+  }
+  footer, footer ul{
+    flex-direction: column;
+  }
+  #main_footer{
+        height: 100px;
+  }
+  #slash{
+    display: none;
+  }
+  .module_001, .module_002{
+    align-self: center;
+  }
+#brands{
+  flex-direction: row;
+}
+
+#credits{
+  flex-direction: column;
+}
+
+}
